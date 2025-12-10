@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nitay's Portfolio - Tech for Sport Injury Prevention" />
+    <title>Nitay's Portfolio</title>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nitay's Portfolio" />
+    <meta property="og:description" content="Portfolio showcasing projects in cybersecurity, fintech, and education technology. Currently interested in tech for sport injury prevention." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=80" />
+    <meta property="og:url" content="https://nitay.github.io" />
+    <meta property="og:site_name" content="Nitay's Portfolio" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nitay's Portfolio" />
+    <meta name="twitter:description" content="Portfolio showcasing projects in cybersecurity, fintech, and education technology." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=80" />
+
+    <!-- Prevent dark mode flash -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
+    <!-- Loading state styles -->
+    <style>
+      #loading-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        transition: opacity 0.4s ease-out, visibility 0.4s ease-out;
+      }
+      .dark #loading-screen {
+        background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+      }
+      #loading-screen.hidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .loader-spinner {
+        width: 48px;
+        height: 48px;
+        border: 3px solid #e2e8f0;
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+      .dark .loader-spinner {
+        border-color: #334155;
+        border-top-color: #60a5fa;
+      }
+      .loader-text {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #1e293b;
+        letter-spacing: 0.025em;
+      }
+      .dark .loader-text {
+        color: #f1f5f9;
+      }
+      .loader-dots {
+        display: inline-flex;
+        gap: 4px;
+      }
+      .loader-dots span {
+        width: 6px;
+        height: 6px;
+        background: #2563eb;
+        border-radius: 50%;
+        animation: bounce 1.4s infinite ease-in-out both;
+      }
+      .dark .loader-dots span {
+        background: #60a5fa;
+      }
+      .loader-dots span:nth-child(1) { animation-delay: -0.32s; }
+      .loader-dots span:nth-child(2) { animation-delay: -0.16s; }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      @keyframes bounce {
+        0%, 80%, 100% { transform: scale(0); }
+        40% { transform: scale(1); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">
+          Loading
+          <span class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
