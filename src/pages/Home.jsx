@@ -46,11 +46,12 @@ export default function Home() {
     {
       id: 3,
       slug: "ai-english-tutor",
-      title: "English Private Tutor Product",
+      title: "Unseenio - English Private Tutor Product",
       category: "Education Technology",
-      description: "An innovative e-learning platform that connects students with expert English tutors for personalized one-on-one sessions. Includes interactive lessons, progress tracking, and adaptive learning algorithms to optimize language acquisition.",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
-      technologies: ["Video Conferencing", "AI Matching", "Progress Tracking"]
+      description: "An AI-powered English learning platform featuring reading comprehension exercises, interactive lessons with Dr. Jessy AI tutor, grammar and vocabulary modules, and personalized progress tracking. Helps students master English through adaptive learning algorithms.",
+      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+      technologies: ["AI Tutor", "Reading Comprehension", "Adaptive Learning", "Progress Tracking"],
+      link: "https://unseenio.com"
     }
   ];
 
@@ -76,7 +77,7 @@ export default function Home() {
                 <Mail className="w-4 h-4" />
                 <span className="hidden sm:inline text-sm font-medium">nitay446@gmail.com</span>
               </a>
-              <a href="tel:+1234567890" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="tel:+9720000000" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Phone className="w-4 h-4" />
                 <span className="hidden sm:inline text-sm font-medium">+123 456 7890</span>
               </a>
@@ -154,7 +155,7 @@ export default function Home() {
               onClick={() => scrollToProject('ai-english-tutor')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              AI English Tutor
+              Unseenio
             </button>
           </div>
         </div>

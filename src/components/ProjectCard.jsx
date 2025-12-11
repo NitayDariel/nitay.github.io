@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 
 export default function ProjectCard({ project, index }) {
   const isEven = index % 2 === 0;
@@ -55,6 +56,20 @@ export default function ProjectCard({ project, index }) {
                 {tech}
               </span>
             ))}
+          </div>
+        )}
+
+        {project.link && (
+          <div className="pt-2">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 dark:bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
+            >
+              <span>Visit Website</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         )}
       </div>
