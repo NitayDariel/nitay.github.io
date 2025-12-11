@@ -27,24 +27,15 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      slug: "Security-framework",
-      title: "Cyber Offense Framework",
-      category: "Cybersecurity",
-      description: "An advanced framework designed to simulate cyber attacks and penetration testing scenarios. Simulate MITRE ATT&CK phishing tactics and variations..",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
-      technologies: ["Penetration Testing", "Threat Simulation", "Security Analysis"]
-    },
-    {
-      id: 2,
       slug: "finance-dashboard",
       title: "Financial Analyzing Dashboard",
       category: "FinTech",
-      description: "A comprehensive financial analytics platform that provides real-time insights into market trends, portfolio performance, and risk assessment. Features advanced visualization tools and predictive analytics for informed decision-making.",
+      description: "An end-to-end financial analytics platform featuring a complete data pipeline that transforms raw financial data into actionable insights. Includes automated data ingestion, cleaning, and processing workflows that feed into real-time dashboards. Provides market trend analysis, portfolio performance tracking, and risk assessment with advanced visualization tools and predictive analytics for informed decision-making.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      technologies: ["Data Visualization", "Predictive Analytics", "Real-time Monitoring"]
+      technologies: ["Data Pipeline", "ETL Processing", "Data Visualization", "Predictive Analytics", "Real-time Monitoring"]
     },
     {
-      id: 3,
+      id: 2,
       slug: "ai-english-tutor",
       title: "Unseenio - English Private Tutor Product",
       category: "Education Technology",
@@ -52,6 +43,15 @@ export default function Home() {
       image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
       technologies: ["AI Tutor", "Reading Comprehension", "Adaptive Learning", "Progress Tracking"],
       link: "https://unseenio.com"
+    },
+    {
+      id: 3,
+      slug: "security-framework",
+      title: "Cyber Offense Framework",
+      category: "Cybersecurity",
+      description: "An advanced framework designed to simulate cyber attacks and penetration testing scenarios. Simulate MITRE ATT&CK phishing tactics and variations.",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
+      technologies: ["Penetration Testing", "Threat Simulation", "Security Analysis"]
     }
   ];
 
@@ -140,12 +140,6 @@ export default function Home() {
             data-aos-delay="300"
           >
             <button
-              onClick={() => scrollToProject('security-framework')}
-              className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
-            >
-              Security Framework
-            </button>
-            <button
               onClick={() => scrollToProject('finance-dashboard')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
@@ -156,6 +150,12 @@ export default function Home() {
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Unseenio
+            </button>
+            <button
+              onClick={() => scrollToProject('security-framework')}
+              className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
+            >
+              Security Framework
             </button>
           </div>
         </div>
