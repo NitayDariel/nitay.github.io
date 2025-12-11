@@ -27,10 +27,10 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      slug: "offense-framework",
+      slug: "Security-framework",
       title: "Cyber Offense Framework",
       category: "Cybersecurity",
-      description: "An advanced framework designed to simulate realistic cyber attacks and penetration testing scenarios. Helps organizations identify vulnerabilities and strengthen their security posture through comprehensive attack simulations.",
+      description: "An advanced framework designed to simulate cyber attacks and penetration testing scenarios. Simulate MITRE ATT&CK phishing tactics and variations..",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
       technologies: ["Penetration Testing", "Threat Simulation", "Security Analysis"]
     },
@@ -72,9 +72,9 @@ export default function Home() {
             </div>
             
             <div className="flex items-center gap-4">
-              <a href="mailto:nitay@example.com" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="mailto:nitay446@gmail.com" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="hidden sm:inline text-sm font-medium">nitay@example.com</span>
+                <span className="hidden sm:inline text-sm font-medium">nitay446@gmail.com</span>
               </a>
               <a href="tel:+1234567890" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -139,10 +139,10 @@ export default function Home() {
             data-aos-delay="300"
           >
             <button
-              onClick={() => scrollToProject('offense-framework')}
+              onClick={() => scrollToProject('security-framework')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              Offense Framework
+              Security Framework
             </button>
             <button
               onClick={() => scrollToProject('finance-dashboard')}
@@ -176,20 +176,20 @@ export default function Home() {
             <div data-aos="fade-up">
               <h3 className="text-3xl font-bold mb-4">Let's Connect</h3>
               <p className="text-slate-400 dark:text-slate-500 text-lg mb-6">
-                Interested in collaborating on sports injury prevention technology? Get in touch.
+                Interested in collaborating? Get in touch.
               </p>
             </div>
             <div className="flex flex-col justify-center items-start md:items-end gap-4" data-aos="fade-up" data-aos-delay="200">
-              <a href="mailto:nitay@example.com" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
-                nitay@example.com
+              <a href="mailto:nitay446@gmail.com" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
+                nitay446@gmail.com
               </a>
               <a href="tel:+1234567890" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
-                +123 456 7890
+                +972 000 1000
               </a>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-slate-800 dark:border-slate-800 text-center text-slate-500 dark:text-slate-600">
-            <p>© 2024 Nitay. All rights reserved.</p>
+            <p>© 2025 Nitay. All rights reserved.</p>
           </div>
         </div>
       </footer>
