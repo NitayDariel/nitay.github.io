@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Mail, Phone, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
 import DarkModeToggle from '../components/DarkModeToggle';
 import ScrollToTop from '../components/ScrollToTop';
@@ -77,11 +77,7 @@ export default function Home() {
                 <Mail className="w-4 h-4" />
                 <span className="hidden sm:inline text-sm font-medium">nitay446@gmail.com</span>
               </a>
-              <a href="tel:+9720000000" className="hidden md:flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                <Phone className="w-4 h-4" />
-                <span className="hidden sm:inline text-sm font-medium">+123 456 7890</span>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/nitaydariel/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
               <DarkModeToggle />
@@ -99,7 +95,7 @@ export default function Home() {
             </h1>
             <div className="space-y-6">
               <p className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 font-light leading-relaxed">
-                Currently interested in <span className="text-blue-600 dark:text-blue-400 font-medium">tech for sport injury prevention.</span>
+                Currently interested in <span className="text-blue-600 dark:text-blue-400 font-medium">Research Analyst job, while leveraging AI tools.</span>
               </p>
               <div className="h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
               <div className="flex gap-4 pt-4">
@@ -184,8 +180,8 @@ export default function Home() {
               <a href="mailto:nitay446@gmail.com" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
                 nitay446@gmail.com
               </a>
-              <a href="tel:+1234567890" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
-                +972 000 1000
+              <a href="https://www.linkedin.com/in/nitaydariel/" target="_blank" rel="noopener noreferrer" className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 transition-colors text-lg">
+                LinkedIn Profile
               </a>
             </div>
           </div>
