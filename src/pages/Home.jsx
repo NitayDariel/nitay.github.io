@@ -59,11 +59,15 @@ export default function Home() {
     {
       id: 3,
       slug: "security-framework",
-      title: "Cyber Offense Framework",
-      category: "Cybersecurity",
-      description: "An advanced framework designed to simulate cyber attacks and penetration testing scenarios. Simulate MITRE ATT&CK phishing tactics and variations.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80",
-      technologies: ["Penetration Testing", "Threat Simulation", "Security Analysis"]
+      title: "Cybersecurity Learning Platform",
+      category: "Cybersecurity & Education",
+      description: "An educational cybersecurity framework for learning offensive security techniques in controlled environments. Features realistic phishing page simulation, encrypted reverse shell payload generation, and C2 server capabilities. Demonstrates MITRE ATT&CK tactics including social engineering and credential harvesting for security awareness training.",
+      images: [
+        "/images/security-platform.png",
+        "/images/security-cli.png",
+        "/images/security-phishing.png"
+      ],
+      technologies: ["Python", "Flask", "Phishing Simulation", "Payload Generation", "MITRE ATT&CK"]
     }
   ];
 
