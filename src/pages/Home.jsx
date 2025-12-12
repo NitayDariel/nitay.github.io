@@ -32,10 +32,10 @@ export default function Home() {
       category: "Quantitative Finance & Research",
       description: "A research-grade ETF correlation discovery system with algorithmic pair selection and statistical validation. The core innovation is detecting lagged correlation clusters between ETFs—identifying time-delayed relationships (±60 days) where one ETF's movement may predict another's. Features Fama-French factor preprocessing, multiple correlation algorithms (Pearson, Spearman, Cross-Correlation), and interactive Streamlit dashboards with lag pattern visualizations, trading intelligence, and risk assessment tools.",
       images: [
-        "/nitay.github.io/images/etf-cli.png",
-        "/nitay.github.io/images/etf-dashboard.png",
-        "/nitay.github.io/images/etf-lag-analysis.png",
-        "/nitay.github.io/images/etf-trading.png"
+        "/images/etf-cli.png",
+        "/images/etf-dashboard.png",
+        "/images/etf-lag-analysis.png",
+        "/images/etf-trading.png"
       ],
       technologies: ["Python", "Lagged Correlation Analysis", "Fama-French Factors", "Statistical Validation", "Streamlit Dashboard"],
       github: "https://github.com/NitayDariel/ETFanalyzer"
@@ -47,11 +47,11 @@ export default function Home() {
       category: "Education Technology",
       description: "A comprehensive AI-powered English learning platform featuring Dr. Jessy, an intelligent AI tutor that provides personalized guidance. Includes reading comprehension exercises (Unseens), essay writing practice, grammar drills, and vocabulary building modules. Students receive instant feedback, adaptive difficulty levels, and progress tracking to master English effectively.",
       images: [
-        "/nitay.github.io/images/unseenio-home.png",
-        "/nitay.github.io/images/unseenio-reading.png",
-        "/nitay.github.io/images/unseenio-questions.png",
-        "/nitay.github.io/images/unseenio-tutor.png",
-        "/nitay.github.io/images/unseenio-tutor2.png"
+        "/images/unseenio-home.png",
+        "/images/unseenio-reading.png",
+        "/images/unseenio-questions.png",
+        "/images/unseenio-tutor.png",
+        "/images/unseenio-tutor2.png"
       ],
       technologies: ["AI Tutor", "Reading Comprehension", "Essay Writing", "Grammar & Vocabulary", "Adaptive Learning"],
       link: "https://unseenio.com"
