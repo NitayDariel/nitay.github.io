@@ -61,13 +61,13 @@ export default function Home() {
       slug: "security-framework",
       title: "Cybersecurity Learning Platform",
       category: "Cybersecurity & Education",
-      description: "An educational cybersecurity framework for learning offensive security techniques in controlled environments. Features realistic phishing page simulation, encrypted reverse shell payload generation, and C2 server capabilities. Demonstrates MITRE ATT&CK tactics including social engineering and credential harvesting for security awareness training.",
+      description: "An educational cybersecurity platform for understanding offensive security techniques. Features a reverse shell delivery system via phishing simulation with AES-256 encrypted communication channels. Includes an interactive CLI console, C2 server, payload generator, and detailed explanation mode covering each attack component. Cross-platform support for Windows, Linux, and macOS.",
       images: [
         "/images/security-platform.png",
         "/images/security-cli.png",
         "/images/security-phishing.png"
       ],
-      technologies: ["Python", "Flask", "Phishing Simulation", "Payload Generation", "MITRE ATT&CK"]
+      technologies: ["Python", "Encrypted C2", "Phishing Simulation", "Reverse Shell", "Educational"]
     }
   ];
 
