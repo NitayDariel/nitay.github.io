@@ -43,11 +43,16 @@ export default function Home() {
     {
       id: 2,
       slug: "ai-english-tutor",
-      title: "Unseenio - English Private Tutor Product",
+      title: "Unseenio - AI English Learning Platform",
       category: "Education Technology",
-      description: "An AI-powered English learning platform featuring reading comprehension exercises, interactive lessons with Dr. Jessy AI tutor, grammar and vocabulary modules, and personalized progress tracking. Helps students master English through adaptive learning algorithms.",
-      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
-      technologies: ["AI Tutor", "Reading Comprehension", "Adaptive Learning", "Progress Tracking"],
+      description: "A comprehensive AI-powered English learning platform featuring Dr. Jessy, an intelligent AI tutor that provides personalized guidance. Includes reading comprehension exercises (Unseens), essay writing practice, grammar drills, and vocabulary building modules. Students receive instant feedback, adaptive difficulty levels, and progress tracking to master English effectively.",
+      images: [
+        "/nitay.github.io/images/unseenio-home.png",
+        "/nitay.github.io/images/unseenio-reading.png",
+        "/nitay.github.io/images/unseenio-questions.png",
+        "/nitay.github.io/images/unseenio-tutor.png"
+      ],
+      technologies: ["AI Tutor", "Reading Comprehension", "Essay Writing", "Grammar & Vocabulary", "Adaptive Learning"],
       link: "https://unseenio.com"
     },
     {
