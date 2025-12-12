@@ -59,7 +59,7 @@ export default function Home() {
     {
       id: 3,
       slug: "security-framework",
-      title: "Cybersecurity Learning Platform",
+      title: "Security Educational Framework",
       category: "Cybersecurity & Education",
       description: "An educational cybersecurity platform for understanding offensive security techniques. Features a reverse shell delivery system via phishing simulation with AES-256 encrypted communication channels. Includes an interactive CLI console, C2 server, payload generator, and detailed explanation mode covering each attack component. Cross-platform support for Windows, Linux, and macOS.",
       images: [
@@ -167,7 +167,7 @@ export default function Home() {
               onClick={() => scrollToProject('security-framework')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              Security Framework
+              Security Educational Framework
             </button>
           </div>
         </div>

@@ -57,12 +57,14 @@ export default function ImageCarousel({ images, alt, autoPlay = true, interval =
   
   if (images.length === 1) {
     return (
-      <img 
-        src={images[0]} 
-        alt={alt}
-        loading="lazy"
-        className="w-full h-[300px] sm:h-[350px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
-      />
+      <div className="w-full h-[300px] sm:h-[350px] md:h-[400px] flex items-center justify-center bg-slate-100 dark:bg-slate-800">
+        <img 
+          src={images[0]} 
+          alt={alt}
+          loading="lazy"
+          className="max-w-full max-h-full w-auto h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+        />
+      </div>
     );
   }
 
@@ -82,14 +84,18 @@ export default function ImageCarousel({ images, alt, autoPlay = true, interval =
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image, index) => (
-          <img
+          <div 
             key={index}
-            src={image}
-            alt={`${alt} - ${index + 1}`}
-            loading="lazy"
-            draggable="false"
-            className="w-full h-full object-cover flex-shrink-0 select-none"
-          />
+            className="w-full h-full flex-shrink-0 flex items-center justify-center bg-slate-100 dark:bg-slate-800"
+          >
+            <img
+              src={image}
+              alt={`${alt} - ${index + 1}`}
+              loading="lazy"
+              draggable="false"
+              className="max-w-full max-h-full w-auto h-auto object-contain select-none"
+            />
+          </div>
         ))}
       </div>
 
