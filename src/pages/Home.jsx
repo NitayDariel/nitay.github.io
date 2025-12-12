@@ -50,7 +50,8 @@ export default function Home() {
         "/nitay.github.io/images/unseenio-home.png",
         "/nitay.github.io/images/unseenio-reading.png",
         "/nitay.github.io/images/unseenio-questions.png",
-        "/nitay.github.io/images/unseenio-tutor.png"
+        "/nitay.github.io/images/unseenio-tutor.png",
+        "/nitay.github.io/images/unseenio-tutor2.png"
       ],
       technologies: ["AI Tutor", "Reading Comprehension", "Essay Writing", "Grammar & Vocabulary", "Adaptive Learning"],
       link: "https://unseenio.com"
