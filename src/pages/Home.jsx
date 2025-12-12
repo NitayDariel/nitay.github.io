@@ -28,11 +28,17 @@ export default function Home() {
     {
       id: 1,
       slug: "finance-dashboard",
-      title: "Financial Analyzing Dashboard",
-      category: "FinTech",
-      description: "An end-to-end financial analytics platform featuring a complete data pipeline that transforms raw financial data into actionable insights. Includes automated data ingestion, cleaning, and processing workflows that feed into real-time dashboards. Provides market trend analysis, portfolio performance tracking, and risk assessment with advanced visualization tools and predictive analytics for informed decision-making.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-      technologies: ["Data Pipeline", "ETL Processing", "Data Visualization", "Predictive Analytics", "Real-time Monitoring"]
+      title: "ETF Correlation Analyzer",
+      category: "Quantitative Finance & Research",
+      description: "A research-grade ETF correlation discovery system with algorithmic pair selection and statistical validation. The core innovation is detecting lagged correlation clusters between ETFs—identifying time-delayed relationships (±60 days) where one ETF's movement may predict another's. Features Fama-French factor preprocessing, multiple correlation algorithms (Pearson, Spearman, Cross-Correlation), and interactive Streamlit dashboards with lag pattern visualizations, trading intelligence, and risk assessment tools.",
+      images: [
+        "/nitay.github.io/images/etf-cli.png",
+        "/nitay.github.io/images/etf-dashboard.png",
+        "/nitay.github.io/images/etf-lag-analysis.png",
+        "/nitay.github.io/images/etf-trading.png"
+      ],
+      technologies: ["Python", "Lagged Correlation Analysis", "Fama-French Factors", "Statistical Validation", "Streamlit Dashboard"],
+      github: "https://github.com/NitayDariel/ETFanalyzer"
     },
     {
       id: 2,
@@ -95,7 +101,7 @@ export default function Home() {
             </h1>
             <div className="space-y-6">
               <p className="text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 font-light leading-relaxed">
-                Currently interested in <span className="text-blue-600 dark:text-blue-400 font-medium">Research Analyst job, while leveraging AI tools.</span>
+                Currently interested in <span className="text-blue-600 dark:text-blue-400 font-medium">Research Analyst job, leveraging AI tools.</span>
               </p>
               <div className="h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
               <div className="flex gap-4 pt-4">
@@ -139,7 +145,7 @@ export default function Home() {
               onClick={() => scrollToProject('finance-dashboard')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              Finance Dashboard
+              ETF Analyzer
             </button>
             <button
               onClick={() => scrollToProject('ai-english-tutor')}

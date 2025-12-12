@@ -1,8 +1,10 @@
 import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
+import ImageCarousel from './ImageCarousel';
 
 export default function ProjectCard({ project, index }) {
   const isEven = index % 2 === 0;
+  const hasMultipleImages = project.images && project.images.length > 0;
   
   return (
     <div 
@@ -16,13 +18,22 @@ export default function ProjectCard({ project, index }) {
         data-aos-duration="1000"
       >
         <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
-          <img 
-            src={project.image} 
-            alt={project.title}
-            loading="lazy"
-            className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 dark:from-slate-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          {hasMultipleImages ? (
+            <ImageCarousel 
+              images={project.images} 
+              alt={project.title}
+              autoPlay={true}
+              interval={5000}
+            />
+          ) : (
+            <img 
+              src={project.image} 
+              alt={project.title}
+              loading="lazy"
+              className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 dark:from-slate-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         </div>
       </div>
 
@@ -59,21 +70,34 @@ export default function ProjectCard({ project, index }) {
           </div>
         )}
 
-        {project.link && (
-          <div className="pt-2">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 dark:bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
-            >
-              <span>Visit Website</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
+        {/* Action Buttons */}
+        {(project.link || project.github) && (
+          <div className="flex flex-wrap gap-3 pt-2">
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 dark:bg-blue-500 text-white rounded-lg font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors shadow-md hover:shadow-lg"
+              >
+                <span>Visit Website</span>
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-800 dark:bg-slate-700 text-white rounded-lg font-medium hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-md hover:shadow-lg"
+              >
+                <Github className="w-4 h-4" />
+                <span>View Code</span>
+              </a>
+            )}
           </div>
         )}
       </div>
     </div>
   );
 }
-
