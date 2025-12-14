@@ -89,7 +89,7 @@ export default function ProjectCard({ project, index }) {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800 dark:bg-slate-700 text-white rounded-lg text-sm sm:text-base font-medium hover:bg-slate-700 dark:hover:bg-slate-600 transition-colors shadow-md hover:shadow-lg active:scale-95"
+                className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-800 dark:bg-transparent text-white dark:text-orange-400 border-2 border-slate-800 dark:border-orange-400 rounded-lg text-sm sm:text-base font-medium hover:bg-slate-700 dark:hover:bg-orange-400/10 transition-colors shadow-md hover:shadow-lg active:scale-95"
               >
                 <Github className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 <span>View Code</span>
