@@ -61,7 +61,7 @@ export default function Home() {
       slug: "security-framework",
       title: "Security Educational Framework",
       category: "Cybersecurity & Education",
-      description: "An educational cybersecurity platform for understanding offensive security techniques. Features a reverse shell delivery system via phishing simulation with AES-256 encrypted communication channels. Includes an interactive CLI console, C2 server, payload generator, and detailed explanation mode covering each attack component. Cross-platform support for Windows, Linux, and macOS.",
+      description: "An educational cybersecurity platform for understanding offensive security techniques. Features a reverse shell delivery system via phishing simulation with AES-256 encrypted communication channels. Includes an interactive CLI console, C2 server, payload generator, and detailed explanation mode covering each attack component.",
       images: [
         "/images/security-platform.png",
         "/images/security-cli.png",
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4">
           <div className="flex justify-between items-center">
             <div className="text-2xl font-bold text-slate-900 dark:text-white">
-              Nitay's <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
+              Nitay Dariel <span className="text-blue-600 dark:text-blue-400">Portfolio</span>
             </div>
             
             <div className="flex items-center gap-4">
@@ -116,10 +116,10 @@ export default function Home() {
               <div className="h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full"></div>
               <div className="flex gap-4 pt-4">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/NitayDariel" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-slate-800 text-white rounded-lg hover:bg-slate-800 dark:hover:bg-slate-700 transition-colors shadow-lg hover:shadow-xl"
+                  className="flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-transparent text-white dark:text-orange-400 rounded-lg border-2 border-slate-900 dark:border-orange-400 hover:bg-slate-800 dark:hover:bg-orange-400/10 transition-colors shadow-lg hover:shadow-xl"
                 >
                   <Github className="w-5 h-5" />
                   <span className="font-medium">GitHub</span>
