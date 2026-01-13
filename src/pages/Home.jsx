@@ -35,9 +35,7 @@ export default function Home() {
         "/images/CBCR-Dashboard.png",
         "/images/CBCR-advanced-params.png",
         "/images/CBCR-Trades.png",
-        "/images/CBCR-Insights.png",
-        "/images/CBCR-RSI.png",
-        "/images/CBCR-How-To.png"
+        "/images/CBCR-Insights.png"
       ],
       technologies: ["React", "FastAPI", "AWS", "Backtesting", "Correlation Analysis"],
       github: "https://github.com/NitayDariel/CBCR"
