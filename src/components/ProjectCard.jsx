@@ -33,7 +33,7 @@ export default function ProjectCard({ project, index }) {
               className="w-full h-[300px] sm:h-[350px] md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 dark:from-slate-950/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/15 dark:from-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
         </div>
       </div>
 

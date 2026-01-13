@@ -172,7 +172,7 @@ export default function Home() {
               onClick={() => scrollToProject('cbcr-backtesting')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
             >
-              CBCR Simulator
+              Trading Simulator
             </button>
             <button
               onClick={() => scrollToProject('finance-dashboard')}
