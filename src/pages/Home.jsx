@@ -26,6 +26,23 @@ export default function Home() {
 
   const projects = [
     {
+      id: 0,
+      slug: "cbcr-backtesting",
+      title: "Backtesting Correlation Simulator",
+      category: "Web Simulator & Cloud",
+      description: "A full-stack cloud-based backtesting platform for quantitative trading strategies with seamless user experience. Built with React frontend and FastAPI backend, featuring smart data caching, RESTful API architecture, and automated pipeline for strategy testing. Enables correlation-based leader-follower analysis, multiple indicator strategies (RSI, SMA, EMA, MACD), and comprehensive performance metrics with risk diagnostics. Designed for AWS cloud deployment with stateless architecture for horizontal scalability.",
+      images: [
+        "/images/CBCR-Dashboard.png",
+        "/images/CBCR-advanced-params.png",
+        "/images/CBCR-Trades.png",
+        "/images/CBCR-Insights.png",
+        "/images/CBCR-RSI.png",
+        "/images/CBCR-How-To.png"
+      ],
+      technologies: ["React", "FastAPI", "AWS", "Backtesting", "Correlation Analysis"],
+      github: "https://github.com/NitayDariel/CBCR"
+    },
+    {
       id: 1,
       slug: "finance-dashboard",
       title: "ETF Correlation Analyzer",
@@ -151,6 +168,12 @@ export default function Home() {
             data-aos="fade-up"
             data-aos-delay="300"
           >
+            <button
+              onClick={() => scrollToProject('cbcr-backtesting')}
+              className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
+            >
+              CBCR Simulator
+            </button>
             <button
               onClick={() => scrollToProject('finance-dashboard')}
               className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-blue-600 dark:border-blue-400 rounded-lg font-medium hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md hover:shadow-lg"
